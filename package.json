@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "node index.js -c -D -m -a all -d test/ -e FO9IG3",
-    "code": "node index.js -d test/js/ -C FO9IG3,lntUQx,TctR5r"
+    "code": "node index.js -d test/js/ -C FO9IG3,lntUQx,TctR5r",
+    "css-extract": "node html-tools.js"
   },
   "bin": {
     "cables": "./index.js"
