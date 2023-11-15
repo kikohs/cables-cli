@@ -288,7 +288,7 @@ async function run(patchFolder, outCssFilePath='style/style.css', backupHtmlFile
         }
 
         // Add stylesheet to HTML
-        if (!await addStylesheetToHTML(htmlFilePath, cssPath)) {
+        if (!await addStylesheetToHTML(htmlFilePath, outCssFilePath)) {
             console.log('Failed to add CSS to HTML.');
             return;
         }
