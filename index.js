@@ -9,6 +9,8 @@ const extract = require("extract-zip");
 const fetch = require("node-fetch");
 const mkdirp = require("mkdirp");
 
+const htmlTools = require("./html-tool");
+
 const configFilename = ".cablesrc";
 
 const assetExportOptions = [
@@ -573,4 +575,5 @@ function doCodeExportWithParams(options, onFinished, onError)
 module.exports = {
     export: doExportWithParams,
     mulit: doCodeExportWithParams,
+    htmlTools: htmlTools.run
 };
