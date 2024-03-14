@@ -8,8 +8,7 @@ const prompt = require("prompt");
 const extract = require("extract-zip");
 const fetch = require("node-fetch");
 const mkdirp = require("mkdirp");
-
-const htmlTools = require("./html-tool");
+const htmlTools = require("./html-tools");
 
 const configFilename = ".cablesrc";
 
